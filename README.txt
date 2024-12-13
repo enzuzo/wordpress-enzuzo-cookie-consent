@@ -35,7 +35,7 @@ Once an account is created, you can find the installation code snippet or UUID u
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.1 =
 * Initial release.
 
 == Upgrade Notice ==

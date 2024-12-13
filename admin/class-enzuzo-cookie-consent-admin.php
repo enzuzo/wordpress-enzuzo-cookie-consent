@@ -103,7 +103,7 @@ class Enzuzo_Cookie_Consent_Admin {
         // account UUID
         add_settings_field(
             'enzuzo_cookie_consent_uuid',
-            '<span class="enzuzo-cookie-consent-tooltip" title="' . __( 'Set your UUID or snippet from Enzuzo Dashboard (do not add extra code here - only the UUID will be used)', 'cookie-consent-integration' ) . '">?</span>' . __( 'account UUID or code snippet (required):', 'cookie-consent-integration' ),
+            '<span class="enzuzo-cookie-consent-tooltip" title="' . __( 'Set your installation code snippet or UUID from Enzuzo Dashboard (do not add extra code here - only the UUID will be used)', 'cookie-consent-integration' ) . '">?</span>' . __( 'installation code snippet or account UUID (required):', 'cookie-consent-integration' ),
             array( $this, 'setup_section_callback_uuid_function' ),
             'enzuzo-cookie-consent',
             'enzuzo_cookie_consent_setup_settings_section'
