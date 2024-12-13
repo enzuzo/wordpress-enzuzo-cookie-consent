@@ -26,11 +26,10 @@
 	    );
 	    //set current tab
 		$nonce = wp_create_nonce('tab_action_nonce');
-	    // $tab = ( isset($_GET['tab']) && wp_verify_nonce(sanitize_text_field(wp_unslash($_GET['tab']))) ? sanitize_text_field(wp_unslash($_GET['tab'])) : 'setup' );
-		$tab = ( isset($_GET['tab']) ? sanitize_text_field(wp_unslash($_GET['tab'])) : 'setup' );
-	    ?>
+	    $tab = ( isset($_GET['tab']) && isset($_GET['nonce']) && wp_verify_nonce(sanitize_text_field(wp_unslash($_GET['nonce'])), 'tab_nonce') ? sanitize_text_field(wp_unslash($_GET['tab'])) : 'setup' );
+		?>
 	    <?php foreach( $tabs as $key => $value ): ?>
-			<a class="nav-tab <?php if( $tab == $key ){ echo 'nav-tab-active'; } ?>" href="<?php echo esc_url(admin_url()) ?>options-general.php?page=enzuzo-cookie-consent&tab=<?php echo esc_html($key); ?>"><?php echo esc_html($value); ?></a>
+			<a class="nav-tab <?php if( $tab == $key ){ echo 'nav-tab-active'; } ?>" href="<?php echo esc_url(admin_url()) ?>options-general.php?page=enzuzo-cookie-consent&tab=<?php echo esc_html($key); ?>&nonce=<?php echo esc_html(wp_create_nonce('tab_nonce')); ?>"><?php echo esc_html($value); ?></a>
 	    <?php endforeach; ?>
 	</h2>
 
