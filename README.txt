@@ -20,7 +20,7 @@ To install the plugin:
 
 1. Upload the content of the plugin to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the **Plugins** menu in WordPress.
-3. Specify your **account UUID** (looks like `aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee`) and enable the banner in WordPress under **Settings** → **Enzuzo**.
+3. Specify your **installation code snippet** from Enzuzo Dashboard or **account UUID** (looks like `aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee`) and enable the banner in WordPress under **Settings** → **Enzuzo**.
 
 == Frequently Asked Questions ==
 
@@ -28,9 +28,9 @@ To install the plugin:
 
 Yes. An account is required to customize the plugin and to store and access consent logs, manage preferences, etc.
 
-= Where do I find the UUID? =
+= Where do I find the installation code snippet or UUID? =
 
-Once an account is created, you can find the UUID under the following URL:
+Once an account is created, you can find the installation code snippet or UUID under the following URL:
 [https://app.enzuzo.com/settings/cookiebar/add-to-website](https://app.enzuzo.com/settings/cookiebar/add-to-website)
 
 == Changelog ==
